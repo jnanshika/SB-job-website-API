@@ -50,7 +50,7 @@ def get_all_users():
         user_schema = UserSchema(many= True)
         if not users:
             return {"message": "No users found"}, 40
-        return {"users": user_schema.dump(users.items)}, 200
+        return {"users": user_schema.dump(users)}, 200
     
     except Exception as e:
         return {"error": f"Unexpected error occurred while retrieving user information: {str(e)}"}, 500

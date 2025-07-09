@@ -5,3 +5,9 @@ class Config:
     SQLALCHEMY_DATABASE_URI = "mysql+pymysql://root:root@localhost:3306/jobconnect"
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     DEBUG = "developement"
+    #for email
+    SMTP_SERVER = 'smtp.gmail.com'
+    SMTP_PORT = 465
+    SMTP_USERNAME = ''  #gmailid
+    SMTP_PASSWORD = ''  #app password
+    MAIL_SENDER = 'noreply@gamil.com'
